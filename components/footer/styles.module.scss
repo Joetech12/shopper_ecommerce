@@ -4,9 +4,12 @@
     position: relative;
     width: 100%;
     display: grid;
-    // grid-template-areas:
-    // "links"
-    // "socials";
+    grid-template-areas:
+      'socials'
+      'links'
+      'newsletter'
+      'payment'
+      'copyright';
     gap: 3rem;
     padding: 1rem;
   }
@@ -20,6 +23,7 @@
     color: #222;
   }
   &_links {
+    grid-area: links;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -41,6 +45,7 @@
     }
   }
   &_socials {
+    grid-area: socials;
     section {
       ul {
         margin-top: 10px;
@@ -62,6 +67,7 @@
     margin-top: 10px;
   }
   &_newsletter {
+    grid-area: newsletter;
     input {
       outline: none;
       border: 1px solid #999;
@@ -83,6 +89,7 @@
     }
   }
   &_payment {
+    grid-area: payment;
   }
   &_flexwrap {
     display: flex;
@@ -96,6 +103,7 @@
     }
   }
   &_copyright {
+    grid-area: copyright;
     section {
       font-size: 12px;
       color: #666;
@@ -118,7 +126,7 @@
           right: -1rem;
         }
         &:last-of-type::after {
-            display: none;
+          display: none;
         }
       }
     }
