@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import UserMenu from './UserMenu';
 
-const Top = () => {
+const Top = ({ country }) => {
   const [loggedIn, setLoggedIn] = useState(true);
   const [visible, setVisible] = useState(false);
   return (
@@ -14,13 +14,22 @@ const Top = () => {
       <div className={styles.top_container}>
         <div className=""></div>
         <ul className={styles.top_list}>
-          <li className={styles.li}>
-            <img
-              src="https://www.seekpng.com/png/detail/510-5105991_illustration-of-flag-of-nigeria-nigeria-flag-icon.png"
-              alt=""
-            />
-            <span>Nigeria / NGN</span>
-          </li>
+          {country ? (
+            <li className={styles.li}>
+              <img src={country.flag} alt="" />
+              <span>{country.name} / usd</span>
+            </li>
+          ) : (
+            <li className={styles.li}>
+              <img
+                src={
+                  'https://www.seekpng.com/png/detail/510-5105991_illustration-of-flag-of-nigeria-nigeria-flag-icon.png'
+                }
+                alt=""
+              />
+              <span>Nigeria / NGN</span>
+            </li>
+          )}
           <li className={styles.li}>
             <MdSecurity />
             <span>Buyer Protection</span>
@@ -41,9 +50,10 @@ const Top = () => {
             <BsSuitHeart />
             <span>WishList</span>
           </li>
-          <li className={styles.li}
-          onMouseOver={()=>setVisible(true)}
-          onMouseLeave={()=>setVisible(false)}
+          <li
+            className={styles.li}
+            onMouseOver={() => setVisible(true)}
+            onMouseLeave={() => setVisible(false)}
           >
             {loggedIn ? (
               <li className={styles.li}>
