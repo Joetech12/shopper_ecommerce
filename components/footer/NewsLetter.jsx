@@ -10,8 +10,8 @@ const NewsLetter = () => {
         <button className={styles.btn_primary}>SUBSCRIBE</button>
       </div>
       <p>
-        By clicking the SUBSCRIBE button, you are agreeing to {' '}
-        <Link href="">Our Privacy & Cookie Policy</Link>
+        By clicking the SUBSCRIBE button, you are agreeing to{' '}
+        <Link href=""> Our Privacy & Cookie Policy</Link>
       </p>
     </div>
   );
