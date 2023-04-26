@@ -5,9 +5,11 @@ import { RiAccountPinCircleLine, RiArrowDropDownFill } from 'react-icons/ri';
 import Link from 'next/link';
 import { useState } from 'react';
 import UserMenu from './UserMenu';
+import { useSession, signIn, signOut } from 'next-auth/react';
 
 const Top = ({ country }) => {
-  const [loggedIn, setLoggedIn] = useState(true);
+  const { data: session } = useSession();
+  //   const [loggedIn, setLoggedIn] = useState(true);
   const [visible, setVisible] = useState(false);
   return (
     <div className={styles.top}>
@@ -55,14 +57,11 @@ const Top = ({ country }) => {
             onMouseOver={() => setVisible(true)}
             onMouseLeave={() => setVisible(false)}
           >
-            {loggedIn ? (
+            {session ? (
               <li className={styles.li}>
                 <div className={styles.flex}>
-                  <img
-                    src="https://media.istockphoto.com/id/1372641621/photo/portrait-of-a-businessman-on-gray-background.jpg?s=612x612&w=0&k=20&c=G7RmU1vHuzqIscJDOVrUVRl_-yIOIl0ws3f4RRc8qHU="
-                    alt="profile-pix"
-                  />
-                  <span>Ifeanyi</span>
+                  <img src={session.user.image} />
+                  <span>{session.user.name}</span>
                   <RiArrowDropDownFill />
                 </div>
               </li>
@@ -75,7 +74,7 @@ const Top = ({ country }) => {
                 </div>
               </li>
             )}
-            {visible && <UserMenu loggedIn={loggedIn} />}
+            {visible && <UserMenu session={session} />}
           </li>
         </ul>
       </div>
