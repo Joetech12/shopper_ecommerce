@@ -1,8 +1,11 @@
 import Link from 'next/link';
 import styles from './styles.module.scss';
 import { signIn, signOut } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
 
 const UserMenu = ({ session }) => {
+  const router = useRouter();
+
   return (
     <div className={styles.menu}>
       <h4>Welcome to Shopper!</h4>
@@ -17,7 +20,12 @@ const UserMenu = ({ session }) => {
         </div>
       ) : (
         <div className={styles.flex}>
-          <button className={styles.btn_primary}>Register</button>
+          <button
+            className={styles.btn_primary}
+            onClick={() => router.push('/signup')}
+          >
+            Register
+          </button>
           <button className={styles.btn_outlined} onClick={() => signIn()}>
             Login
           </button>

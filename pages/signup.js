@@ -16,7 +16,7 @@ const initialValues = {
   login_password: '',
 };
 
-const Signin = ({ providers }) => {
+const Signup = ({ providers }) => {
   const [user, setUser] = useState(initialValues);
   const { login_email, login_password } = user;
   const handleChange = (e) => {
@@ -45,7 +45,7 @@ const Signin = ({ providers }) => {
             </span>
           </div>
           <div className={styles.login_form}>
-            <h1>Sign In</h1>
+            <h1>Sign Up</h1>
             <p>Get access to the best e-Shopping service in Nigeria</p>
             <Formik
               enableReinitialize
@@ -71,9 +71,9 @@ const Signin = ({ providers }) => {
                     placeholder="Password"
                     onChange={handleChange}
                   />
-                  <CircledIconBtn type="submit" text="Sign In" />
+                  <CircledIconBtn type="submit" text="Sign Up" />
                   <div className={styles.account}>
-                    <Link href="#" className={styles.forgot}>Forgot password?</Link> | <Link href="#" className={styles.forgot}>Sign Up</Link>
+                    Have an account? <span onClick={()=>signIn()} className={styles.forgot}>Sign In</span>
                   </div>
                 </Form>
               )}
@@ -106,7 +106,7 @@ const Signin = ({ providers }) => {
   );
 };
 
-export default Signin;
+export default Signup;
 
 export async function getServerSideProps(context) {
   const providers = Object.values(await getProviders());
