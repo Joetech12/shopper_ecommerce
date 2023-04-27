@@ -10,29 +10,61 @@ import Footer from '../components/footer';
 import styles from '../styles/signin.module.scss';
 import LoginInput from '../components/inputs/loginInput';
 import CircledIconBtn from '../components/buttons/circledIconBtn';
+import axios from 'axios';
+import { Router } from 'next/router';
+import { useRouter } from 'next/navigation';
+import DotLoaderSpinner from '../components/loaders/dotLoader';
 
 const initialValues = {
   login_email: '',
   login_password: '',
+  success: '',
+  error: '',
 };
 
 const Signin = ({ providers }) => {
+  const [loading, setLoading] = useState(false);
   const [user, setUser] = useState(initialValues);
-  const { login_email, login_password } = user;
+  const { login_email, login_password, success, error } = user;
   const handleChange = (e) => {
     const { name, value } = e.target;
     setUser({ ...user, [name]: value });
   };
-  console.log(user);
+  //   console.log(user);
+
+  const router = useRouter();
+
   const loginValidation = Yup.object().shape({
     login_email: Yup.string()
       .email('Please enter a valid email address')
       .required('Email address is required'),
-    login_password: Yup.string().required('Please enter a password'),
+    login_password: Yup.string()
+      .required('Please enter a password')
+      .min(8, 'Password must be atleast 8 characters')
+      .max(32, `Password can't be more than 32 characters`),
   });
+  const signInHandler = async () => {
+    setLoading(true);
+    let options = {
+      redirect: false,
+      email: login_email,
+      password: login_password,
+    };
+    const res = await signIn('credentials', options);
+    setUser({ ...user, success: '', error: '' });
+
+    if (res?.error) {
+      setLoading(false);
+      setUser({ ...user, error: res?.error });
+    } else {
+      setLoading(false);
+      return router.push('/');
+    }
+  };
 
   return (
     <>
+      {loading && <DotLoaderSpinner loading={loading} />}
       <Header />
       <div className={styles.login}>
         <div className={styles.login_container}>
@@ -54,6 +86,9 @@ const Signin = ({ providers }) => {
                 login_password,
               }}
               validationSchema={loginValidation}
+              onSubmit={() => {
+                signInHandler();
+              }}
             >
               {(form) => (
                 <Form>
@@ -71,9 +106,18 @@ const Signin = ({ providers }) => {
                     placeholder="Password"
                     onChange={handleChange}
                   />
-                  <CircledIconBtn type="submit" text="Sign In" />
+                  <div className={styles.button}>
+                    <CircledIconBtn type="submit" text="Sign In" />
+                    {error && <span className={styles.error}>{error}</span>}
+                  </div>
                   <div className={styles.account}>
-                    <Link href="#" className={styles.forgot}>Forgot password?</Link> | <Link href="#" className={styles.forgot}>Sign Up</Link>
+                    <Link href="#" className={styles.forgot}>
+                      Forgot password?
+                    </Link>{' '}
+                    |{' '}
+                    <Link href="/signup" className={styles.forgot}>
+                      Sign Up
+                    </Link>
                   </div>
                 </Form>
               )}
@@ -82,20 +126,18 @@ const Signin = ({ providers }) => {
             <div className={styles.login_socials}>
               <span className={styles.or}>Or continue with</span>
               <div className={styles.login_socials_wrap}>
-                {providers.map((provider) => (
-                  <div key={provider.name}>
-                    <button
-                      className={styles.social_btn}
-                      onClick={() => signIn(provider.id)}
-                    >
-                      <img
-                        src={`/${provider.name}.png`}
-                        alt={`${provider.name}`}
-                      />
-                      Sign in with {provider.name}
-                    </button>
-                  </div>
-                ))}
+                <div>
+                  <button
+                    className={styles.social_btn}
+                    onClick={() => signIn(providers[1].id)}
+                  >
+                    <img
+                      src={`/${providers[1].name}.png`}
+                      alt={`${providers[1].name}`}
+                    />
+                    <p>Sign in with {providers[1].name}</p>
+                  </button>
+                </div>
               </div>
             </div>
           </div>

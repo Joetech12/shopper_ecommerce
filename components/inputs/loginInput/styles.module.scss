@@ -1,14 +1,13 @@
 .input {
   position: relative;
-  max-width: 380px;
-  width: 100%;
+  width: 400px;
   background-color: #f0f0f0;
   margin: 10px 0;
   height: 55px;
   border-radius: 55px;
   display: grid;
   grid-template-columns: 15% 85%;
-  padding: 0 1rem;
+  padding: 0 20px;
   align-items: center;
   margin-bottom: 1rem;
   svg {
@@ -61,7 +60,7 @@
   padding: 10px;
   span {
     position: absolute;
-    bottom: -10px;
+    bottom: -9px;
     left: 1rem;
     border-top: 10px solid $error-color;
     border-right: 10px solid transparent;

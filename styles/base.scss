@@ -2,6 +2,7 @@ $blue-color: #2f82ff;
 $grey-color: #f8f8f8;
 $light-error-color: #fd010169;
 $error-color: #ed4337;
+$success-color: #6cc070;
 
 $shadow-1: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
@@ -9,23 +10,33 @@ $shadow-1: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 30px;
+  padding: 10px 0;
   gap: 5px;
   background: $blue-color;
   color: #fff;
   font-weight: 600;
   cursor: pointer;
   width: 100%;
-  border-radius: 2px;
+  &:hover {
+    background: #1271ff;
+    transition: all 0.1s ease;
+  }
 }
 .btn_outlined {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 30px;
+  padding: 10px 0;
   gap: 5px;
   background: $grey-color;
   color: $blue-color;
   font-weight: 600;
   cursor: pointer;
   width: 100%;
-  border-radius: 2px;
+  &:hover {
+    background: #eaeaea;
+    transition: all 0.1s ease;
+  }
 }

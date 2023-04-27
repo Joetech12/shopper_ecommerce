@@ -4,35 +4,75 @@ import { useState } from 'react';
 import { Form, Formik } from 'formik';
 import * as Yup from 'yup';
 import { getProviders, signIn } from 'next-auth/react';
+import Router from 'next/router';
 
 import Header from '../components/header';
 import Footer from '../components/footer';
 import styles from '../styles/signin.module.scss';
 import LoginInput from '../components/inputs/loginInput';
 import CircledIconBtn from '../components/buttons/circledIconBtn';
+import axios from 'axios';
+import DotLoaderSpinner from '../components/loaders/dotLoader';
 
 const initialValues = {
-  login_email: '',
-  login_password: '',
+  name: '',
+  email: '',
+  password: '',
+  confirm_password: '',
+  success: '',
+  error: '',
 };
 
 const Signup = ({ providers }) => {
+  const [loading, setLoading] = useState(false);
   const [user, setUser] = useState(initialValues);
-  const { login_email, login_password } = user;
+  const { name, email, password, confirm_password, success, error } = user;
   const handleChange = (e) => {
     const { name, value } = e.target;
     setUser({ ...user, [name]: value });
   };
-  console.log(user);
-  const loginValidation = Yup.object().shape({
-    login_email: Yup.string()
+
+  //   console.log(user);
+  const signupValidation = Yup.object().shape({
+    name: Yup.string()
+      .required('Please enter your full name')
+      .min(4, 'Name must be atleast 4 characters')
+      .max(32, `'Name can't be more than 32 characters'`)
+      .matches(/^[aA-zZ]/, 'Numbers and special characters are not allowed'),
+    email: Yup.string()
       .email('Please enter a valid email address')
       .required('Email address is required'),
-    login_password: Yup.string().required('Please enter a password'),
+    password: Yup.string()
+      .required('Please enter a password')
+      .min(8, 'Password must be atleast 8 characters')
+      .max(32, `Password can't be more than 32 characters`),
+    confirm_password: Yup.string()
+      .required('Please confirm your password')
+      .oneOf([Yup.ref('password')], `Password doesn't match`),
   });
+
+  const signUpHandler = async () => {
+    try {
+      setLoading(true);
+      const { data } = await axios.post('/api/auth/signup', {
+        name,
+        email,
+        password,
+      });
+      setUser({ ...user, error: '', success: data.message });
+      setLoading(false);
+      setTimeout(() => {
+        Router.push('/');
+      }, 2000);
+    } catch (error) {
+      setLoading(false);
+      setUser({ ...user, success: '', error: error.response.data.message });
+    }
+  };
 
   return (
     <>
+      {loading && <DotLoaderSpinner loading={loading} />}
       <Header />
       <div className={styles.login}>
         <div className={styles.login_container}>
@@ -50,53 +90,61 @@ const Signup = ({ providers }) => {
             <Formik
               enableReinitialize
               initialValues={{
-                login_email,
-                login_password,
+                name,
+                email,
+                password,
+                confirm_password,
               }}
-              validationSchema={loginValidation}
+              validationSchema={signupValidation}
+              onSubmit={() => {
+                signUpHandler();
+              }}
             >
               {(form) => (
                 <Form>
                   <LoginInput
                     type="text"
-                    name="login_email"
+                    name="name"
+                    icon="user"
+                    placeholder="Full Name"
+                    onChange={handleChange}
+                  />
+                  <LoginInput
+                    type="text"
+                    name="email"
                     icon="email"
                     placeholder="Email Address"
                     onChange={handleChange}
                   />
                   <LoginInput
                     type="password"
-                    name="login_password"
+                    name="password"
                     icon="password"
                     placeholder="Password"
                     onChange={handleChange}
                   />
-                  <CircledIconBtn type="submit" text="Sign Up" />
+                  <LoginInput
+                    type="password"
+                    name="confirm_password"
+                    icon="password"
+                    placeholder="Confirm Password"
+                    onChange={handleChange}
+                  />
+                  <div className={styles.button}>
+                    <CircledIconBtn type="submit" text="Sign Up" />
+                  </div>
                   <div className={styles.account}>
-                    Have an account? <span onClick={()=>signIn()} className={styles.forgot}>Sign In</span>
+                    Have an account?{' '}
+                    <span onClick={() => signIn()} className={styles.forgot}>
+                      Sign In
+                    </span>
                   </div>
                 </Form>
               )}
             </Formik>
-
-            <div className={styles.login_socials}>
-              <span className={styles.or}>Or continue with</span>
-              <div className={styles.login_socials_wrap}>
-                {providers.map((provider) => (
-                  <div key={provider.name}>
-                    <button
-                      className={styles.social_btn}
-                      onClick={() => signIn(provider.id)}
-                    >
-                      <img
-                        src={`/${provider.name}.png`}
-                        alt={`${provider.name}`}
-                      />
-                      Sign in with {provider.name}
-                    </button>
-                  </div>
-                ))}
-              </div>
+            <div>{error && <span className={styles.error}>{error}</span>}</div>
+            <div>
+              {success && <span className={styles.success}>{success}</span>}
             </div>
           </div>
         </div>

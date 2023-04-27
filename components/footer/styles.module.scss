@@ -83,10 +83,12 @@
       outline: none;
       border: 1px solid #999;
       flex: 1;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
       height: 40px;
       font-size: 14px;
       padding-left: 10px;
-    //   margin-right: 5px;
+      //   margin-right: 5px;
     }
     button {
       width: 150px;
@@ -143,4 +145,17 @@
       }
     }
   }
+}
+
+.newsletter_btn {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background: $blue-color;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
 }
