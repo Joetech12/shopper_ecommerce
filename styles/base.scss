@@ -1,22 +1,32 @@
 $blue-color: #2f82ff;
-$grey-color: #f8f8f8;
+$grey-color: #dadada;
 $light-error-color: #fd010169;
 $error-color: #ed4337;
 $success-color: #6cc070;
 
 $shadow-1: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
-.btn_primary {
+@mixin align($value) {
+  align-items: $value;
+  justify-content: $value;
+}
+
+.btn {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 30px;
-  padding: 10px 0;
+  @include align(center);
   gap: 5px;
-  background: $blue-color;
-  color: #fff;
-  font-weight: 600;
   cursor: pointer;
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+
+.btn_primary {
+  @extend .btn;
+  padding: 10px 0;
+  background: $blue-color;
+  border: 2px solid $blue-color;
+  color: #fff;
   width: 100%;
   &:hover {
     background: #1271ff;
@@ -29,8 +39,9 @@ $shadow-1: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   justify-content: center;
   border-radius: 30px;
   padding: 10px 0;
+  border: 2px solid $blue-color;
   gap: 5px;
-  background: $grey-color;
+  //   background: $grey-color;
   color: $blue-color;
   font-weight: 600;
   cursor: pointer;
@@ -40,3 +51,16 @@ $shadow-1: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     transition: all 0.1s ease;
   }
 }
+
+.error {
+    color: $error-color;
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+  
+  .success {
+    color: $success-color;
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+  

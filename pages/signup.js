@@ -61,9 +61,15 @@ const Signup = ({ providers }) => {
       });
       setUser({ ...user, error: '', success: data.message });
       setLoading(false);
-      setTimeout(() => {
+      setTimeout(async () => {
+        let options = {
+          redirect: false,
+          email: email,
+          password: password,
+        };
+        const res = await signIn('credentials', options);
         Router.push('/');
-      }, 2000);
+      }, 1000);
     } catch (error) {
       setLoading(false);
       setUser({ ...user, success: '', error: error.response.data.message });

@@ -41,10 +41,10 @@ const data = [
     name: 'Terms & Conditions',
     link: '',
   },
-  {
-    name: 'Copyright Notice',
-    link: '',
-  },
+//   {
+//     name: 'Copyright Notice',
+//     link: '',
+//   },
 ];
 
 export default Copyright;

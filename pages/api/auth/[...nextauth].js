@@ -5,12 +5,12 @@ import { MongoDBAdapter } from '@next-auth/mongodb-adapter';
 import CredentialsProvider from 'next-auth/providers/credentials';
 import bcrypt from 'bcryptjs';
 
-import db from '../../../utils/db'
+import db from '../../../utils/db';
 import User from '../../../models/User';
 
 import clientPromise from './lib/mongodb';
 
-db.connectDb()
+db.connectDb();
 
 export default NextAuth({
   adapter: MongoDBAdapter(clientPromise),
@@ -45,6 +45,15 @@ export default NextAuth({
       clientSecret: process.env.GOOGLE_SECRET,
     }),
   ],
+
+  callbacks: {
+    async session({ session, token }) {
+      let user = await User.findById(token.sub);
+      session.user.id = token.sub || user._id.toString();
+      session.user.role = user.role || 'user';
+      return session;
+    },
+  },
 
   pages: {
     signIn: '/signin',
