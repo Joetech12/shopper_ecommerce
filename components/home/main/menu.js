@@ -34,46 +34,46 @@ const Menu = () => {
         <div className={styles.menu_list}>
           {menus.map((item, i) => (
             <li key={item.name}>
-                <a>
-                  {i == 0 ? (
-                    <GiLargeDress />
-                  ) : i == 1 ? (
-                    <GiClothes />
-                  ) : i == 2 ? (
-                    <GiHeadphones />
-                  ) : i == 3 ? (
-                    <GiWatch />
-                  ) : i == 4 ? (
-                    <HiOutlineHome />
-                  ) : i == 5 ? (
-                    <GiHealthCapsule />
-                  ) : i == 6 ? (
-                    <GiBallerinaShoes />
-                  ) : i == 7 ? (
-                    <GiBigDiamondRing />
-                  ) : i == 8 ? (
-                    <GiSportMedal />
-                  ) : i == 9 ? (
-                    <FaBaby />
-                  ) : i == 10 ? (
-                    <BiCameraMovie />
-                  ) : i == 11 ? (
-                    <MdOutlineSportsEsports />
-                  ) : i == 12 ? (
-                    <BsPhoneVibrate />
-                  ) : i == 13 ? (
-                    <MdOutlineSmartToy />
-                  ) : i == 14 ? (
-                    <BiGift />
-                  ) : i == 15 ? (
-                    <Gi3DHammer />
-                  ) : i == 16 ? (
-                    <AiOutlineSecurityScan />
-                  ) : (
-                    ''
-                  )}
-                  <span>{item.name}</span>
-                </a>
+              <a>
+                {i == 0 ? (
+                  <GiLargeDress />
+                ) : i == 1 ? (
+                  <GiClothes />
+                ) : i == 2 ? (
+                  <GiHeadphones />
+                ) : i == 3 ? (
+                  <GiWatch />
+                ) : i == 4 ? (
+                  <HiOutlineHome />
+                ) : i == 5 ? (
+                  <GiHealthCapsule />
+                ) : i == 6 ? (
+                  <GiBallerinaShoes />
+                ) : i == 7 ? (
+                  <GiBigDiamondRing />
+                ) : i == 8 ? (
+                  <GiSportMedal />
+                ) : i == 9 ? (
+                  <FaBaby />
+                ) : i == 10 ? (
+                  <BiCameraMovie />
+                ) : i == 11 ? (
+                  <MdOutlineSportsEsports />
+                ) : i == 12 ? (
+                  <BsPhoneVibrate />
+                ) : i == 13 ? (
+                  <MdOutlineSmartToy />
+                ) : i == 14 ? (
+                  <BiGift />
+                ) : i == 15 ? (
+                  <Gi3DHammer />
+                ) : i == 16 ? (
+                  <AiOutlineSecurityScan />
+                ) : (
+                  ''
+                )}
+                <span>{item.name}</span>
+              </a>
             </li>
           ))}
         </div>

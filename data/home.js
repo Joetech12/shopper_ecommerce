@@ -269,3 +269,26 @@ export const menus = [
     images: [],
   },
 ];
+
+export const userSwipper = [
+  {
+    image: '',
+    link: '',
+  },
+  {
+    image: '',
+    link: '',
+  },
+  {
+    image: '',
+    link: '',
+  },
+  {
+    image: '',
+    link: '',
+  },
+  {
+    image: '',
+    link: '',
+  },
+];

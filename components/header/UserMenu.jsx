@@ -2,6 +2,7 @@ import Link from 'next/link';
 import styles from './styles.module.scss';
 import { signIn, signOut } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
+import { IoSettingsOutline } from 'react-icons/io5';
 
 const UserMenu = ({ session }) => {
   const router = useRouter();
@@ -11,7 +12,7 @@ const UserMenu = ({ session }) => {
       <h4>Welcome to Shopper!</h4>
       {session ? (
         <div className={styles.flex2}>
-          <img src={session.user.image} className={styles.menu_img} />
+          <img src={session.user.image} className={styles.menu_img} alt="" />
           <div className={styles.col}>
             <span>Welcome Back,</span>
             <h3>{session.user.name}</h3>
