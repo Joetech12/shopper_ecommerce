@@ -292,3 +292,62 @@ export const userSwipper = [
     link: '',
   },
 ];
+
+export const flashDeals = [
+  {
+    image:
+      'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/89/762414/1.jpg?2533',
+    discount: 27,
+    price: 75,
+    sold: 85,
+  },
+  {
+    image:
+      'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/72/332204/1.jpg?2782',
+    discount: 6,
+    sold: 34,
+    price: 18,
+  },
+  {
+    image:
+      'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/268383/1.jpg?9312',
+    discount: 10,
+    sold: 55,
+    price: 24,
+  },
+  {
+    image:
+      'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/50/710417/1.jpg?1052',
+    discount: 41,
+    sold: 65,
+    price: 58,
+  },
+  {
+    image:
+      'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/15/8220801/1.jpg?9957',
+    discount: 12,
+    sold: 32,
+    price: 26,
+  },
+  {
+    image:
+      'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/76/4857422/1.jpg?6569',
+    discount: 17,
+    sold: 98,
+    price: 78,
+  },
+  {
+    image:
+      'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/045319/1.jpg?3368',
+    discount: 12,
+    sold: 93,
+    price: 68,
+  },
+  {
+    image:
+      'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/29/166128/1.jpg?2540',
+    discount: 18,
+    sold: 91,
+    price: 72,
+  },
+];

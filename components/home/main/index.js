@@ -8,7 +8,7 @@ import MainSwiper from './swiper';
 const Main = () => {
   return (
     <div className={styles.main}>
-     <Header/>
+      <Header />
       <Menu />
       <MainSwiper />
       {/* <Offers /> */}

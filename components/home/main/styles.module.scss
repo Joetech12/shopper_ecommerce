@@ -4,8 +4,8 @@
   gap: 10px;
   grid-template-areas:
     'menu header '
-    'menu swiper '
     'menu swiper ';
+  margin-bottom: 2rem;
 
   @media (max-width: 990px) {
     grid-template-columns: 80px 3fr;
@@ -114,8 +114,8 @@
     border-radius: 10px;
     box-shadow: $shadow-1;
     @media (max-width: 730px) {
-        height: auto;
-      }
+      height: auto;
+    }
   }
   //   .user {
   //     grid-area: user;
