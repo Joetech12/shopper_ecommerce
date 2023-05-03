@@ -12,7 +12,7 @@ import 'swiper/css/navigation';
 import Link from 'next/link';
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper';
+import { Autoplay, Pagination, Navigation} from 'swiper';
 
 export default function MainSwiper() {
   const progressCircle = useRef(null);

@@ -1,0 +1,713 @@
+[
+  {
+    "_id": {
+      "$oid": "62c4711c062128444ad591a1"
+    },
+    "name": "Allover Plants Print Square Neck Front Dress",
+    "description": "Allover Plants Print Square Neck Front Dress",
+    "brand": "Boho",
+    "slug": "Allover-Plants-Print-Square-Neck-Front-Dress",
+    "category": {
+      "$oid": "62d69f9e60276c9915a995b8"
+    },
+    "subCategories": [
+      {
+        "$oid": "62c4711c062128444ad591a3"
+      }
+    ],
+    "details": [
+      {
+        "name": "Style",
+        "value": "Boho",
+        "_id": {
+          "$oid": "62c4711c062128444ad591a4"
+        }
+      },
+      {
+        "name": "Pattern Type",
+        "value": "Plants, All Over Print",
+        "_id": {
+          "$oid": "62c4711c062128444ad591a5"
+        }
+      },
+      {
+        "name": "Details",
+        "value": "Knot",
+        "_id": {
+          "$oid": "62c4711c062128444ad591a6"
+        }
+      },
+      {
+        "name": "Type",
+        "value": "A Line",
+        "_id": {
+          "$oid": "62c4711c062128444ad591a7"
+        }
+      },
+      {
+        "name": "Neckline",
+        "value": "Square Neck",
+        "_id": {
+          "$oid": "62c4711c062128444ad591a8"
+        }
+      },
+      {
+        "name": "Sleeve Length",
+        "value": "Short Sleeve",
+        "_id": {
+          "$oid": "62c4711c062128444ad591a9"
+        }
+      },
+      {
+        "name": "Sleeve Type",
+        "value": "Puff Sleeve",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b1"
+        }
+      },
+      {
+        "name": "Waist Line",
+        "value": "High Waist",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b2"
+        }
+      },
+      {
+        "name": "Hem Shaped",
+        "value": "Flared",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b3"
+        }
+      },
+      {
+        "name": "Length",
+        "value": "Long",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b4"
+        }
+      },
+      {
+        "name": "Fit Type",
+        "value": "Regular Fit",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b5"
+        }
+      },
+      {
+        "name": "Fabric",
+        "value": "Non-Stretch",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b6"
+        }
+      },
+      {
+        "name": "Material",
+        "value": "Polyester",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b7"
+        }
+      }
+    ],
+    "questions": [],
+    "subProducts": [
+      {
+        "sku": "sw2206138988536738",
+        "discount": 0,
+        "images": [
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/97/824285/1.jpg?3083",
+            "public_url": "products/j9h8giisorvqwnxgy61a"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/48/824285/1.jpg?3083",
+            "public_url": "products/j9h8giisorvqwnxgy61b"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/41/6907991/1.jpg?5063",
+            "public_url": "products/j9h8giisorvqwnxgy61c"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/78/824285/1.jpg?3083",
+            "public_url": "products/j9h8giisorvqwnxgy61c"
+          }
+        ],
+        "description_images": [],
+        "color": {
+          "color": "#ecd297",
+          "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/57/824285/1.jpg?3083"
+        },
+        "sizes": [
+          {
+            "size": "S",
+            "qty": 15,
+            "price": 17,
+            "_id": {
+              "$oid": "62c4711c062128444ad591b8"
+            }
+          },
+          {
+            "size": "M",
+            "qty": 1414,
+            "price": 19,
+            "_id": {
+              "$oid": "62c4711c062128444ad591b9"
+            }
+          },
+          {
+            "size": "L",
+            "qty": 0,
+            "price": 21,
+            "_id": {
+              "$oid": "62c4711c062128444ad591c1"
+            }
+          },
+          {
+            "size": "XL",
+            "qty": 1423,
+            "price": 28,
+            "_id": {
+              "$oid": "62c4711c062128444ad591c2"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "62c4711c062128444ad591c3"
+        }
+      },
+      {
+        "sku": "vc22142578988545614",
+        "discount": 10,
+        "images": [
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/97/824285/1.jpg?3083",
+            "public_url": "products/j9h8giisorvqwnxgy61a"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/48/824285/1.jpg?3083",
+            "public_url": "products/j9h8giisorvqwnxgy61b"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/41/6907991/1.jpg?5063",
+            "public_url": "products/j9h8giisorvqwnxgy61c"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/78/824285/1.jpg?3083",
+            "public_url": "products/j9h8giisorvqwnxgy61c"
+          }
+        ],
+        "description_images": [],
+        "color": {
+          "color": "#dac4ac",
+          "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/96/1126002/1.jpg?5842"
+        },
+        "sizes": [
+          {
+            "size": "M",
+            "qty": 1456,
+            "price": 15,
+            "_id": {
+              "$oid": "62c4711c062128444ad591e2"
+            }
+          },
+          {
+            "size": "L",
+            "qty": 1700,
+            "price": 21,
+            "_id": {
+              "$oid": "62c4711c062128444ad591e3"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "62c4711c062128444ad591e5"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2022-06-13T16:19:16.829Z"
+    },
+    "updatedAt": {
+      "$date": "2022-06-13T16:19:16.829Z"
+    },
+    "__v": 17,
+    "numReviews": 5,
+    "rating": 3.5,
+    "refundPolicy": "30 days",
+    "reviews": [],
+    "shipping": "2"
+  },
+  {
+    "_id": {
+      "$oid": "62c4711c062128444ad591a1"
+    },
+    "name": "Allover Plants Print Square Neck Front Dress2",
+    "description": "Allover Plants Print Square Neck Front Dress2",
+    "brand": "Boho2",
+    "slug": "Allover-Plants-Print-Square-Neck-Front-Dress2",
+    "category": {
+      "$oid": "62cfeb1e119f0cd432b478d6"
+    },
+    "subCategories": [
+      {
+        "$oid": "62c4711c062128444ad591a3"
+      }
+    ],
+    "details": [
+      {
+        "name": "Style",
+        "value": "Boho",
+        "_id": {
+          "$oid": "62c4711c062128444ad591a4"
+        }
+      },
+      {
+        "name": "Pattern Type",
+        "value": "Plants, All Over Print",
+        "_id": {
+          "$oid": "62c4711c062128444ad591a5"
+        }
+      },
+      {
+        "name": "Details",
+        "value": "Knot",
+        "_id": {
+          "$oid": "62c4711c062128444ad591a6"
+        }
+      },
+      {
+        "name": "Type",
+        "value": "A Line",
+        "_id": {
+          "$oid": "62c4711c062128444ad591a7"
+        }
+      },
+      {
+        "name": "Neckline",
+        "value": "Square Neck",
+        "_id": {
+          "$oid": "62c4711c062128444ad591a8"
+        }
+      },
+      {
+        "name": "Sleeve Length",
+        "value": "Short Sleeve",
+        "_id": {
+          "$oid": "62c4711c062128444ad591a9"
+        }
+      },
+      {
+        "name": "Sleeve Type",
+        "value": "Puff Sleeve",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b1"
+        }
+      },
+      {
+        "name": "Waist Line",
+        "value": "High Waist",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b2"
+        }
+      },
+      {
+        "name": "Hem Shaped",
+        "value": "Flared",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b3"
+        }
+      },
+      {
+        "name": "Length",
+        "value": "Long",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b4"
+        }
+      },
+      {
+        "name": "Fit Type",
+        "value": "Regular Fit",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b5"
+        }
+      },
+      {
+        "name": "Fabric",
+        "value": "Non-Stretch",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b6"
+        }
+      },
+      {
+        "name": "Material",
+        "value": "Polyester",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b7"
+        }
+      }
+    ],
+    "questions": [],
+    "subProducts": [
+      {
+        "sku": "sw2206138988536738",
+        "discount": 0,
+        "images": [
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/97/824285/1.jpg?3083",
+            "public_url": "products/j9h8giisorvqwnxgy61a"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/48/824285/1.jpg?3083",
+            "public_url": "products/j9h8giisorvqwnxgy61b"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/41/6907991/1.jpg?5063",
+            "public_url": "products/j9h8giisorvqwnxgy61c"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/78/824285/1.jpg?3083",
+            "public_url": "products/j9h8giisorvqwnxgy61c"
+          }
+        ],
+        "description_images": [],
+        "color": {
+          "color": "#ecd297",
+          "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/57/824285/1.jpg?3083"
+        },
+        "sizes": [
+          {
+            "size": "S",
+            "qty": 15,
+            "price": 17,
+            "_id": {
+              "$oid": "62c4711c062128444ad591b8"
+            }
+          },
+          {
+            "size": "M",
+            "qty": 1414,
+            "price": 19,
+            "_id": {
+              "$oid": "62c4711c062128444ad591b9"
+            }
+          },
+          {
+            "size": "L",
+            "qty": 0,
+            "price": 21,
+            "_id": {
+              "$oid": "62c4711c062128444ad591c1"
+            }
+          },
+          {
+            "size": "XL",
+            "qty": 1423,
+            "price": 28,
+            "_id": {
+              "$oid": "62c4711c062128444ad591c2"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "62c4711c062128444ad591c3"
+        }
+      },
+      {
+        "sku": "vc22142578988545614",
+        "discount": 10,
+        "images": [
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/97/824285/1.jpg?3083",
+            "public_url": "products/j9h8giisorvqwnxgy61a"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/48/824285/1.jpg?3083",
+            "public_url": "products/j9h8giisorvqwnxgy61b"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/41/6907991/1.jpg?5063",
+            "public_url": "products/j9h8giisorvqwnxgy61c"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/78/824285/1.jpg?3083",
+            "public_url": "products/j9h8giisorvqwnxgy61c"
+          }
+        ],
+        "description_images": [],
+        "color": {
+          "color": "#dac4ac",
+          "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/96/1126002/1.jpg?5842"
+        },
+        "sizes": [
+          {
+            "size": "M",
+            "qty": 1456,
+            "price": 15,
+            "_id": {
+              "$oid": "62c4711c062128444ad591e2"
+            }
+          },
+          {
+            "size": "L",
+            "qty": 1700,
+            "price": 21,
+            "_id": {
+              "$oid": "62c4711c062128444ad591e3"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "62c4711c062128444ad591e5"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2022-06-13T16:19:16.829Z"
+    },
+    "updatedAt": {
+      "$date": "2022-06-13T16:19:16.829Z"
+    },
+    "__v": 17,
+    "numReviews": 5,
+    "rating": 3.5,
+    "refundPolicy": "30 days",
+    "reviews": [],
+    "shipping": "2"
+  },
+  {
+    "_id": {
+      "$oid": "62c4711c062128444ad591a1"
+    },
+    "name": "Allover Plants Print Square Neck Front Dress",
+    "description": "Allover Plants Print Square Neck Front Dress",
+    "brand": "Boho",
+    "slug": "Allover-Plants-Print-Square-Neck-Front-Dress",
+    "category": {
+      "$oid": "62d69f9e60276c9915a995b8"
+    },
+    "subCategories": [
+      {
+        "$oid": "62c4711c062128444ad591a3"
+      }
+    ],
+    "details": [
+      {
+        "name": "Style",
+        "value": "Boho",
+        "_id": {
+          "$oid": "62c4711c062128444ad591a4"
+        }
+      },
+      {
+        "name": "Pattern Type",
+        "value": "Plants, All Over Print",
+        "_id": {
+          "$oid": "62c4711c062128444ad591a5"
+        }
+      },
+      {
+        "name": "Details",
+        "value": "Knot",
+        "_id": {
+          "$oid": "62c4711c062128444ad591a6"
+        }
+      },
+      {
+        "name": "Type",
+        "value": "A Line",
+        "_id": {
+          "$oid": "62c4711c062128444ad591a7"
+        }
+      },
+      {
+        "name": "Neckline",
+        "value": "Square Neck",
+        "_id": {
+          "$oid": "62c4711c062128444ad591a8"
+        }
+      },
+      {
+        "name": "Sleeve Length",
+        "value": "Short Sleeve",
+        "_id": {
+          "$oid": "62c4711c062128444ad591a9"
+        }
+      },
+      {
+        "name": "Sleeve Type",
+        "value": "Puff Sleeve",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b1"
+        }
+      },
+      {
+        "name": "Waist Line",
+        "value": "High Waist",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b2"
+        }
+      },
+      {
+        "name": "Hem Shaped",
+        "value": "Flared",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b3"
+        }
+      },
+      {
+        "name": "Length",
+        "value": "Long",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b4"
+        }
+      },
+      {
+        "name": "Fit Type",
+        "value": "Regular Fit",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b5"
+        }
+      },
+      {
+        "name": "Fabric",
+        "value": "Non-Stretch",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b6"
+        }
+      },
+      {
+        "name": "Material",
+        "value": "Polyester",
+        "_id": {
+          "$oid": "62c4711c062128444ad591b7"
+        }
+      }
+    ],
+    "questions": [],
+    "subProducts": [
+      {
+        "sku": "sw2206138988536738",
+        "discount": 0,
+        "images": [
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/97/824285/1.jpg?3083",
+            "public_url": "products/j9h8giisorvqwnxgy61a"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/48/824285/1.jpg?3083",
+            "public_url": "products/j9h8giisorvqwnxgy61b"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/41/6907991/1.jpg?5063",
+            "public_url": "products/j9h8giisorvqwnxgy61c"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/78/824285/1.jpg?3083",
+            "public_url": "products/j9h8giisorvqwnxgy61c"
+          }
+        ],
+        "description_images": [],
+        "color": {
+          "color": "#ecd297",
+          "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/57/824285/1.jpg?3083"
+        },
+        "sizes": [
+          {
+            "size": "S",
+            "qty": 15,
+            "price": 17,
+            "_id": {
+              "$oid": "62c4711c062128444ad591b8"
+            }
+          },
+          {
+            "size": "M",
+            "qty": 1414,
+            "price": 19,
+            "_id": {
+              "$oid": "62c4711c062128444ad591b9"
+            }
+          },
+          {
+            "size": "L",
+            "qty": 0,
+            "price": 21,
+            "_id": {
+              "$oid": "62c4711c062128444ad591c1"
+            }
+          },
+          {
+            "size": "XL",
+            "qty": 1423,
+            "price": 28,
+            "_id": {
+              "$oid": "62c4711c062128444ad591c2"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "62c4711c062128444ad591c3"
+        }
+      },
+      {
+        "sku": "vc22142578988545614",
+        "discount": 10,
+        "images": [
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/97/824285/1.jpg?3083",
+            "public_url": "products/j9h8giisorvqwnxgy61a"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/48/824285/1.jpg?3083",
+            "public_url": "products/j9h8giisorvqwnxgy61b"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/41/6907991/1.jpg?5063",
+            "public_url": "products/j9h8giisorvqwnxgy61c"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/78/824285/1.jpg?3083",
+            "public_url": "products/j9h8giisorvqwnxgy61c"
+          }
+        ],
+        "description_images": [],
+        "color": {
+          "color": "#dac4ac",
+          "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/96/1126002/1.jpg?5842"
+        },
+        "sizes": [
+          {
+            "size": "M",
+            "qty": 1456,
+            "price": 15,
+            "_id": {
+              "$oid": "62c4711c062128444ad591e2"
+            }
+          },
+          {
+            "size": "L",
+            "qty": 1700,
+            "price": 21,
+            "_id": {
+              "$oid": "62c4711c062128444ad591e3"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "62c4711c062128444ad591e5"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2022-06-13T16:19:16.829Z"
+    },
+    "updatedAt": {
+      "$date": "2022-06-13T16:19:16.829Z"
+    },
+    "__v": 17,
+    "numReviews": 5,
+    "rating": 3.5,
+    "refundPolicy": "30 days",
+    "reviews": [],
+    "shipping": "2"
+  }
+]
