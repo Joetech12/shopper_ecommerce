@@ -49,7 +49,6 @@ const productSchema = new mongoose.Schema(
       unique: true,
       required: true,
       lowercase: true,
-
     },
     category: {
       type: ObjectId,
@@ -96,6 +95,7 @@ const productSchema = new mongoose.Schema(
     },
     subProducts: [
       {
+        sku: String,
         images: [],
         description_images: [],
         color: {
