@@ -233,7 +233,61 @@
     "numReviews": 5,
     "rating": 3.5,
     "refundPolicy": "30 days",
-    "reviews": [],
+    "reviews": [
+      {
+        "createdAt": {
+          "$date": "2022-08-13T16:19:16.829Z"
+        },
+        "updatedAt": {
+          "$date": "2022-08-13T16:19:16.829Z"
+        },
+        "reviewBy": "644aa7b399b78b8ea0e759c1",
+        "fit": "small",
+        "images": [
+          {
+            "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/41/6907991/1.jpg?5063"
+          },
+          {
+            "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/97/824285/1.jpg?3083"
+          }
+        ],
+        "rating": 1,
+        "review": "Hello world, this is my first review",
+        "size": "5",
+        "style": {
+          "color": "#dac4ac",
+          "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/97/824285/1.jpg?3083"
+        },
+        "_id": {
+          "$oid": "62c4711c062128444ad591y0"
+        }
+      },
+      {
+        "createdAt": {
+          "$date": "2022-08-13T16:19:16.829Z"
+        },
+        "updatedAt": {
+          "$date": "2022-08-13T16:19:16.829Z"
+        },
+        "reviewBy": "644aa7b399b78b8ea0e759c1",
+        "fit": "small",
+        "images": [
+          {
+            "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/41/6907991/1.jpg?5063"
+          }
+        ],
+        "rating": 1,
+        "review": "Hello world, this is my second review",
+        "size": "5",
+        "style": {
+          "color": "#dac4ac",
+          "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/97/824285/1.jpg?3083"
+        },
+        "_id": {
+          "$oid": "62c4711c062128444ad591y0"
+        }
+      }
+    ],
     "shipping": "2"
   },
   {

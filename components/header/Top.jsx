@@ -16,7 +16,7 @@ const Top = ({ country }) => {
       <div className={styles.top_container}>
         <div className=""></div>
         <ul className={styles.top_list}>
-          {country ? (
+          {/* {country ? (
             <li className={styles.li}>
               <img src={country.flag} alt="" />
               <span>{country.name} / usd</span>
@@ -31,7 +31,16 @@ const Top = ({ country }) => {
               />
               <span>Nigeria / NGN</span>
             </li>
-          )}
+          )} */}
+           <li className={styles.li}>
+              <img
+                src={
+                  'https://www.seekpng.com/png/detail/510-5105991_illustration-of-flag-of-nigeria-nigeria-flag-icon.png'
+                }
+                alt=""
+              />
+              <span>Nigeria / NGN</span>
+            </li>
           <li className={styles.li}>
             <MdSecurity />
             <span>Buyer Protection</span>

@@ -53,6 +53,25 @@ button {
   outline: none;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.success {
+  padding: 10px;
+  color: $success-color;
+}
+.error {
+  padding: 10px;
+  color: $error-color;
+}
+
 //---------Swipers--------
 
 .swiper-slide {
@@ -104,6 +123,7 @@ button {
 }
 
 .swiper {
+  margin-left: 0 !important;
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -206,6 +226,24 @@ button {
     box-shadow: $shadow-1;
     &::after {
       transform: scale(0.5);
+    }
+  }
+}
+
+.similar_swiper {
+  max-width: 550px;
+  padding-left: 0 !important;
+  .swiper-pagination {
+    display: none !important;
+  }
+  img {
+    width: 100px;
+    height: 160px;
+    object-fit: cover;
+    cursor: pointer;
+    @media (min-width: 461px) {
+      width: 150px;
+      height: 200px;
     }
   }
 }

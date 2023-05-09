@@ -1,0 +1,314 @@
+[
+  {
+    "name": "Latest Plants Print Square Neck Front Dress",
+    "description": "New Plants Print Square Neck Front Dress",
+    "brand": "Boho",
+    "slug": "latest-plants-print-square-neck-front-dress",
+    "category": {
+      "$oid": "62d69f9e60276c9915a995b8"
+    },
+    "subCategories": [
+      {
+        "$oid": "62c4711c062128444ad591a3"
+      }
+    ],
+    "details": [
+      {
+        "name": "Style",
+        "value": "Boho"
+      },
+      {
+        "name": "Pattern Type",
+        "value": "Plants, All Over Print"
+      },
+      {
+        "name": "Details",
+        "value": "Knot"
+      },
+      {
+        "name": "Type",
+        "value": "A Line"
+      },
+      {
+        "name": "Neckline",
+        "value": "Square Neck"
+      },
+      {
+        "name": "Sleeve Length",
+        "value": "Short Sleeve"
+      },
+      {
+        "name": "Sleeve Type",
+        "value": "Puff Sleeve"
+      },
+      {
+        "name": "Waist Line",
+        "value": "High Waist"
+      },
+      {
+        "name": "Hem Shaped",
+        "value": "Flared"
+      },
+      {
+        "name": "Length",
+        "value": "Long"
+      },
+      {
+        "name": "Fit Type",
+        "value": "Regular Fit"
+      },
+      {
+        "name": "Fabric",
+        "value": "Non-Stretch"
+      },
+      {
+        "name": "Material",
+        "value": "Polyester"
+      }
+    ],
+    "questions": [],
+    "subProducts": [
+      {
+        "sku": "sw2206138988536738",
+        "discount": 7,
+        "images": [
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/96/0113221/1.jpg?2430",
+            "public_url": "products/j9h8giisorvqwnxgy61a"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/73/8083701/1.jpg?3805",
+            "public_url": "products/j9h8giisorvqwnxgy61b"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/96/3538931/1.jpg?6523",
+            "public_url": "products/j9h8giisorvqwnxgy61c"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/95/6132511/1.jpg?7727",
+            "public_url": "products/j9h8giisorvqwnxgy61c"
+          }
+        ],
+        "description_images": [],
+        "color": {
+          "color": "#ecd297",
+          "image": "https://media.istockphoto.com/id/1350643908/photo/orange-paper-top-view-abstract-bright-background-without-texture.jpg?s=612x612&w=0&k=20&c=AP1RcFrQOy9qSxtmu34kmCMjYgrgsoCfINptAVtILnE="
+        },
+        "sizes": [
+          {
+            "size": "S",
+            "qty": 15,
+            "price": 17
+          },
+          {
+            "size": "M",
+            "qty": 1414,
+            "price": 19
+          },
+          {
+            "size": "L",
+            "qty": 0,
+            "price": 21
+          },
+          {
+            "size": "XL",
+            "qty": 1423,
+            "price": 28
+          }
+        ]
+      },
+      {
+        "sku": "vc22142578988545614",
+        "discount": 10,
+        "images": [
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/16/292239/1.jpg?5289",
+            "public_url": "products/j9h8giisorvqwnxgy61a"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/77/3917412/1.jpg?8201",
+            "public_url": "products/j9h8giisorvqwnxgy61b"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/93/7264622/1.jpg?3253",
+            "public_url": "products/j9h8giisorvqwnxgy61c"
+          },
+          {
+            "url": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/72/2893701/1.jpg?8686",
+            "public_url": "products/j9h8giisorvqwnxgy61c"
+          }
+        ],
+        "description_images": [],
+        "color": {
+          "color": "#23ad2a",
+          "image": "https://media.istockphoto.com/id/1428272134/photo/christmas-green-backdrop-grunge-wood-board-painted-background.jpg?s=612x612&w=0&k=20&c=p4j08iy_wpzqVpZqQKUrw1VvKkFiLi1nmm2PoznRaeo="
+        },
+        "sizes": [
+          {
+            "size": "M",
+            "qty": 1456,
+            "price": 15
+          },
+          {
+            "size": "L",
+            "qty": 1700,
+            "price": 21
+          }
+        ]
+      }
+    ],
+    "createdAt": {
+      "$date": "2022-06-13T16:19:16.829Z"
+    },
+    "updatedAt": {
+      "$date": "2022-06-13T16:19:16.829Z"
+    },
+    "__v": 17,
+    "numReviews": 5,
+    "rating": 3.5,
+    "refundPolicy": "30 days",
+    "reviews": [
+      {
+        "createdAt": {
+          "$date": "2022-08-13T16:19:16.829Z"
+        },
+        "updatedAt": {
+          "$date": "2022-08-13T16:19:16.829Z"
+        },
+        "reviewBy": {
+          "$oid": "644aa7b399b78b8ea0e759c1"
+        },
+        "fit": "small",
+        "images": [
+          {
+            "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/41/6907991/1.jpg?5063"
+          },
+          {
+            "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/97/824285/1.jpg?3083"
+          }
+        ],
+        "rating": 1,
+        "review": "Hello world, this is my first review",
+        "size": "5",
+        "style": {
+          "color": "#dac4ac",
+          "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/97/824285/1.jpg?3083"
+        },
+        "likes": [
+          {
+            "likes": 4
+          }
+        ]
+      },
+      {
+        "createdAt": {
+          "$date": "2022-08-13T16:19:16.829Z"
+        },
+        "updatedAt": {
+          "$date": "2022-08-13T16:19:16.829Z"
+        },
+        "reviewBy": "644aa7b399b78b8ea0e759c1",
+        "fit": "small",
+        "images": [
+          {
+            "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/41/6907991/1.jpg?5063"
+          }
+        ],
+        "rating": 1,
+        "review": "Hello world, this is my second review",
+        "size": "5",
+        "style": {
+          "color": "#dac4ac",
+          "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/97/824285/1.jpg?3083"
+        },
+        "likes": [
+          {
+            "likes": 2
+          }
+        ]
+      },
+      {
+        "createdAt": {
+          "$date": "2022-08-13T16:19:16.829Z"
+        },
+        "updatedAt": {
+          "$date": "2022-08-13T16:19:16.829Z"
+        },
+        "reviewBy": "644aa7b399b78b8ea0e759c1",
+        "fit": "small",
+        "images": [
+          {
+            "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/41/6907991/1.jpg?5063"
+          }
+        ],
+        "rating": 1,
+        "review": "Hello world, this is my third review",
+        "size": "5",
+        "style": {
+          "color": "#dac4ac",
+          "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/97/824285/1.jpg?3083"
+        },
+        "likes": [
+          {
+            "likes": 7
+          }
+        ]
+      },
+      {
+        "createdAt": {
+          "$date": "2022-08-13T16:19:16.829Z"
+        },
+        "updatedAt": {
+          "$date": "2022-08-13T16:19:16.829Z"
+        },
+        "reviewBy": "644aa7b399b78b8ea0e759c1",
+        "fit": "small",
+        "images": [
+          {
+            "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/41/6907991/1.jpg?5063"
+          }
+        ],
+        "rating": 1,
+        "review": "Hello world, this is my fourth review",
+        "size": "5",
+        "style": {
+          "color": "#dac4ac",
+          "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/97/824285/1.jpg?3083"
+        },
+        "likes": [
+          {
+            "likes": 4
+          }
+        ]
+      },
+      {
+        "createdAt": {
+          "$date": "2022-08-13T16:19:16.829Z"
+        },
+        "updatedAt": {
+          "$date": "2022-08-13T16:19:16.829Z"
+        },
+        "reviewBy": "644aa7b399b78b8ea0e759c1",
+        "fit": "small",
+        "images": [
+          {
+            "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/41/6907991/1.jpg?5063"
+          }
+        ],
+        "rating": 1,
+        "review": "Hello world, this is my fifth review",
+        "size": "5",
+        "style": {
+          "color": "#dac4ac",
+          "image": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/97/824285/1.jpg?3083"
+        },
+        "likes": [
+          {
+            "likes": 7
+          }
+        ]
+      }
+    ],
+    "shipping": "2"
+  }
+]

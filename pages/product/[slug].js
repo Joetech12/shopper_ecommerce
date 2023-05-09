@@ -6,12 +6,15 @@ import Header from '../../components/header';
 import Footer from '../../components/footer';
 import Category from '../../models/Category';
 import SubCategory from '../../models/subCategory';
+import User from '../../models/User';
 import MainSwiper from '../../components/productPage/mainSwiper';
 import { useState } from 'react';
 import Infos from '../../components/productPage/infos';
+import Reviews from '../../components/productPage/reviews';
 
 const ProductSlug = ({ product }) => {
   const [activeImg, setActiveImg] = useState('');
+//   console.log('reviews', product.reviews);
   return (
     <div>
       <Head>
@@ -19,7 +22,7 @@ const ProductSlug = ({ product }) => {
       </Head>
       <Header country="" />
       <div className={styles.product}>
-        <div className={styles.container}>
+        <div className={styles.product_container}>
           <div className={styles.path}>
             Home / {product.category.name}
             {product.subCategories.map((sub, i) => (
@@ -33,6 +36,7 @@ const ProductSlug = ({ product }) => {
             <MainSwiper images={product.images} activeImg={activeImg} />
             <Infos product={product} setActiveImg={setActiveImg} />
           </div>
+          <Reviews product={product} />
         </div>
       </div>
       <Footer />
@@ -56,6 +60,7 @@ export async function getServerSideProps(context) {
   })
     .populate({ path: 'category', model: Category })
     .populate({ path: 'subCategories', model: SubCategory })
+    .populate({ path: 'reviews.reviewBy', model: User })
     .lean();
   //   console.log(product);
   let subProduct = product.subProducts[style];
@@ -76,10 +81,12 @@ export async function getServerSideProps(context) {
     colors: product?.subProducts.map((p) => {
       return p.color;
     }),
-    priceRange:
-      prices.length > 1
-        ? `From ${prices[0]} to ${prices[prices.length - 1]}$`
-        : '',
+    priceRange: subProduct.discount
+      ? `From ${(prices[0] - prices[0] / subProduct.discount).toFixed(2)} to ${(
+          prices[prices.length - 1] -
+          prices[prices.length - 1] / subProduct.discount
+        ).toFixed(2)}$`
+      : `From ${prices[0]} to ${prices[prices.length - 1]}$`,
     price:
       subProduct.discount > 0
         ? (
@@ -89,6 +96,35 @@ export async function getServerSideProps(context) {
         : subProduct.sizes[size].price,
     priceBefore: subProduct.sizes[size].price,
     quantity: subProduct.sizes[size].qty,
+    ratings: [
+      {
+        percentage: 76,
+      },
+      {
+        percentage: 14,
+      },
+      {
+        percentage: 6,
+      },
+      {
+        percentage: 4,
+      },
+      {
+        percentage: 0,
+      },
+    ],
+    allSizes: product.subProducts
+      .map((p) => {
+        return p.sizes;
+      })
+      .flat()
+      .sort((a, b) => {
+        return a.size - b.size;
+      })
+      .filter(
+        (element, index, array) =>
+          array.findIndex((el2) => el2.size === element.size) === index
+      ),
   };
 
   //   console.log('new product', newProduct);
